@@ -1,0 +1,38 @@
+{
+  "name": "stockdrifts",
+  "displayName": "StockDrifts",
+  "version": "1.0.0",
+  "description": "Rated US 13F funds and their average buy prices, company KPIs, Japanese large-shareholder filings with investor ratings, and Korean insider buys. 32 read-only tools over the hosted StockDrifts MCP server.",
+  "author": {
+    "name": "StockDrifts",
+    "email": "hk@stockdrifts.io",
+    "url": "https://www.stockdrifts.io"
+  },
+  "homepage": "https://www.stockdrifts.io/api-docs",
+  "repository": "https://github.com/Stockdrifts/stockdrifts-mcp",
+  "license": "MIT",
+  "keywords": [
+    "stockdrifts",
+    "13f",
+    "hedge-funds",
+    "insider-trading",
+    "korea",
+    "japan",
+    "kpi",
+    "finance",
+    "stocks"
+  ],
+  "icon": "./logo.png",
+  "documentationUrl": "https://www.stockdrifts.io/api-docs",
+  "privacyPolicyUrl": "https://www.stockdrifts.io/legal/privacy-policy",
+  "termsOfServiceUrl": "https://www.stockdrifts.io/legal/terms",
+  "userConfig": {
+    "api_key": {
+      "type": "string",
+      "title": "StockDrifts API key",
+      "description": "Create one at https://app.stockdrifts.io/settings/api-keys. Stored in your system's secure credential store.",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}

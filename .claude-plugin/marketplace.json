@@ -1,0 +1,17 @@
+{
+  "name": "stockdrifts",
+  "owner": {
+    "name": "StockDrifts",
+    "email": "hk@stockdrifts.io"
+  },
+  "plugins": [
+    {
+      "name": "stockdrifts",
+      "source": "./",
+      "description": "Rated US 13F funds and their average buy prices, company KPIs, Japanese large-shareholder filings with investor ratings, and Korean insider buys."
+    }
+  ],
+  "metadata": {
+    "description": "StockDrifts ownership data for AI agents: rated 13F funds, company KPIs, Japanese and Korean filings."
+  }
+}

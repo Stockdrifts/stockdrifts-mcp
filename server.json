@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.stockdrifts/mcp",
+  "title": "StockDrifts",
+  "description": "Rated 13F funds with average buy prices, company KPIs, Japan investor ratings, Korea insider buys.",
+  "version": "1.29.0",
+  "websiteUrl": "https://www.stockdrifts.io/api-docs",
+  "repository": {
+    "url": "https://github.com/Stockdrifts/stockdrifts-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.stockdrifts.io/mcp/",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer <your StockDrifts API key>. Create one at https://app.stockdrifts.io/settings/api-keys",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
