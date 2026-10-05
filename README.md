@@ -25,17 +25,13 @@ Japanese 5%-rule reports are filings by large shareholders. They are not the sam
 
 You need an API key. Create one at https://app.stockdrifts.io/settings/api-keys (API and MCP access is part of the Ultra plan, see [pricing](https://www.stockdrifts.io/pricing)).
 
-Keep the key in an environment variable so it never lands in a config file or a repository:
-
-```bash
-export STOCKDRIFTS_API_KEY="sd_live_..."
-```
+Replace `sd_live_...` in the snippets below with your key, and keep any file that contains it out of version control.
 
 ### Claude Code
 
 ```bash
 claude mcp add --transport http stockdrifts https://mcp.stockdrifts.io/mcp/ \
-  --header "Authorization: Bearer $STOCKDRIFTS_API_KEY"
+  --header "Authorization: Bearer sd_live_..."
 ```
 
 Or install this repository as a plugin (server plus skill). Claude Code asks for the key once and keeps it in your system's secure credential store:
@@ -53,13 +49,11 @@ Or install this repository as a plugin (server plus skill). Claude Code asks for
     "stockdrifts": {
       "type": "http",
       "url": "https://mcp.stockdrifts.io/mcp/",
-      "headers": { "Authorization": "Bearer ${STOCKDRIFTS_API_KEY}" }
+      "headers": { "Authorization": "Bearer sd_live_..." }
     }
   }
 }
 ```
-
-If your client does not expand environment variables, paste the key in place of `${STOCKDRIFTS_API_KEY}` and keep that file out of version control.
 
 ### Codex CLI
 
